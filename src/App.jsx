@@ -1,6 +1,14 @@
+
+
+
+
+
 const App=()=>{
-  return (
-    <h1>hello</h1>
+  return(
+    <>
+      <h2 style={{color:'red',textDecoration:'underline',fontFamily:'arial', fontWeight:'lighter',}}>welcome</h2>
+    </>
   )
 }
+
 export default App;
