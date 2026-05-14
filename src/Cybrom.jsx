@@ -2,7 +2,9 @@
 
 const Cybrom =()=>{
     return (
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <>
+        <h1 className="joinme">join to cybrom</h1>
+        </>
     )
 }
 export default Cybrom

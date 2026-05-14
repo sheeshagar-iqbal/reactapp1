@@ -62,3 +62,25 @@ const App=()=>{
 }
 
 export default App;
+
+
+inline css 
+
+
+
+
+
+const App=()=>{
+  return(
+    <>
+    <div style={{padding:'100px 300px',borderRadius:'20px' ,border:'2px solid red',display:'flex',alignItems:'center',justifyContent:'center'}}>
+      <div style={{padding:'60px 180px',borderRadius:'20px' ,border:'2px solid lightgreen',display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <h2 style={{color:'red',textDecoration:'underline',fontFamily:'arial', fontWeight:'lighter',}}>welcome</h2>
+      </div>
+    </div>
+      
+    </>
+  )
+}
+
+export default App;

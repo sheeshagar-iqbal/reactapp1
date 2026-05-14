@@ -1,14 +1,17 @@
+import React from 'react'
+import Cybrom from './Cybrom'
+import Data from './Data'
+import Footer from './Footer'
 
-
-
-
-
-const App=()=>{
-  return(
+function App() {
+  return (
     <>
-      <h2 style={{color:'red',textDecoration:'underline',fontFamily:'arial', fontWeight:'lighter',}}>welcome</h2>
+    <div className='app'>App</div>
+    <Cybrom/>
+    <Data/>
+    <Footer/>
     </>
   )
 }
 
-export default App;
+export default App

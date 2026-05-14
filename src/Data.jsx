@@ -1,7 +1,7 @@
 const Data=()=>{
     return(
         <>
-        <h1>this is my data part</h1>
+        <h1 className="data">welcome to bhopal</h1>
         </>
     )
 }
