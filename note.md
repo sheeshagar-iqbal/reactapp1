@@ -84,3 +84,54 @@ const App=()=>{
 }
 
 export default App;
+
+
+
+
+<!-- external css ;
+
+ -->
+
+// import './r1.css'
+
+import React from 'react'
+import Cybrom from './Cybrom'
+import Data from './Data'
+import Footer from './Footer'
+
+function App() {
+  return (
+    <>
+    <div className='app'>App</div>
+    <Cybrom/>
+    <Data/>
+    <Footer/>
+    </>
+  )
+}
+
+export default App
+
+
+
+<!-- image      ==========================image ======================image -->
+import React from 'react'
+import myimg1 from './images/img.jpg'
+import myimg2 from './images/img2.jpg'
+import myimg3 from './images/img3.jpg'
+
+function App() {
+  return (
+    <>
+        <h2> welcome to my app</h2>
+        <img src={myimg1} height='200px' width='300px' alt="" />
+        <br />
+        <img src={myimg2} height='200px' width='300px' alt="" />
+        <br />
+        <img src={myimg3} height='200px' width='300px' alt="" />
+
+    </>
+  )
+}
+
+export default App
