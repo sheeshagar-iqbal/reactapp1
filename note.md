@@ -135,3 +135,102 @@ function App() {
 }
 
 export default App
+
+
+
+
+<!-- rounter    dgdfb==================== -->
+
+import React from 'react'
+
+
+
+
+
+
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
+import Layout from './Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import COntact from './pages/COntact'
+
+
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+      <Routes>
+           <Route path='/' element={<Layout/>}>
+           <Route index element={<Home/>}/>
+           <Route path='home' element={<Home/>}/>
+           <Route path='about' element={<About/>}/>
+           <Route path='contact' element={<COntact/>}/>
+           
+           </Route>
+      </Routes>
+      </BrowserRouter>
+
+    </>
+
+  )
+}
+
+export default App
+   <!--               ================== state managenment (use hook usestate) =========== -->
+
+import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [color,setcolor]=useState('bhopal')
+       const display=()=>{
+        setcolor('green')
+       }
+  return (
+    <>
+      <h1>welcom to my app my color: {color}</h1> 
+      <button onClick={()=>setcolor ('indore')}>click here</button>
+    </>
+  )
+}
+
+export default App
+
+    <!-- ,,,=============for color changeing============ -->
+
+  <h1 style={{color:color}}>this  {color} color</h1> 
+      <button onClick={()=>setcolor ('green')}>green</button>
+      <button onClick={()=>setcolor ('blue')}>blue</button>
+      <button onClick={()=>setcolor ('pink')}>pink</button>
+      <button onClick={()=>setcolor ('yellow')}>yellow</button>
+
+
+
+      <!-- count function using usestate -->
+
+      import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [count,setCount]=useState(0)
+  const display=()=>{
+    if (count<=0){
+      alert('count is not less than 0')
+    }
+    else{
+      setCount(count-1)
+    }
+  }
+      
+  return (
+    <>
+      <h1>my count app</h1>
+      <button onClick={()=>setCount(count+1)}>Increment</button>
+      <h1>{count}</h1>
+      <button onClick={()=>setCount(count!=0?count- 1:count)}>decrement</button>
+    </>
+  )
+}
+
+export default App
